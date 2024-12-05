@@ -1,0 +1,1 @@
+The Repository containing solutions to the [Advent of Code 2024](https://adventofcode.com/2024) [challenge](https://deno.com/blog/advent-of-code-2024#how-to-submit) by [Deno](https://deno.com/), the next-generation JavaScript runtime.
