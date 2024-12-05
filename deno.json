@@ -1,0 +1,23 @@
+{
+  "tasks": {
+    "fmt": "deno fmt",
+    "lint": "deno lint --fix",
+    "watch": "deno run --allow-read --watch main.ts"
+  },
+  "lint": {
+    "include": ["src/"],
+    "rules": {
+      "tags": ["recommended"]
+    }
+  },
+  "fmt": {
+    "useTabs": false,
+    "lineWidth": 80,
+    "indentWidth": 2,
+    "semiColons": true,
+    "singleQuote": true,
+    "proseWrap": "preserve",
+    "include": ["src/"],
+    "exclude": []
+  }
+}
