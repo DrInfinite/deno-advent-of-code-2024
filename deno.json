@@ -5,7 +5,6 @@
     "watch": "deno run --allow-read --watch main.ts"
   },
   "lint": {
-    "include": ["src/"],
     "rules": {
       "tags": ["recommended"]
     }
@@ -16,8 +15,6 @@
     "indentWidth": 2,
     "semiColons": true,
     "singleQuote": true,
-    "proseWrap": "preserve",
-    "include": ["src/"],
-    "exclude": []
+    "proseWrap": "preserve"
   }
 }

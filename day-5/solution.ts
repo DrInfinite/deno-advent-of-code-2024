@@ -2,7 +2,7 @@ export const expectedPartOneSampleOutput = '143';
 
 function validateAndSumMiddlePages(
   rules: string[],
-  updates: number[][]
+  updates: number[][],
 ): number {
   const dependencies: Map<number, Set<number>> = new Map();
 
@@ -77,7 +77,7 @@ export function solvePartTwo(input: string): string {
 /***** Helpers *****/
 function isValidOrder(
   update: number[],
-  dependencies: Map<number, Set<number>>
+  dependencies: Map<number, Set<number>>,
 ): boolean {
   const position: Map<number, number> = new Map();
   update.forEach((page, idx) => position.set(page, idx));
@@ -98,7 +98,7 @@ function isValidOrder(
 
 function sortUpdate(
   update: number[],
-  dependencies: Map<number, Set<number>>
+  dependencies: Map<number, Set<number>>,
 ): number[] {
   const sortedUpdate = [...update];
   sortedUpdate.sort((a, b) => {

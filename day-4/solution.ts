@@ -61,8 +61,9 @@ export function solvePartTwo(input: string): string {
 
       if (letter !== 'A') continue;
 
-      if (row === 0 || row === rows - 1 || col === 0 || col === cols - 1)
+      if (row === 0 || row === rows - 1 || col === 0 || col === cols - 1) {
         continue;
+      }
 
       const corners = [
         lines[row - 1][col - 1],

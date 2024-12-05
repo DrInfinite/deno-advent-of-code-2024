@@ -19,7 +19,7 @@ const checkSafe = (arr: number[]): boolean => {
     if (index > arr.length) return false;
     if (Math.abs(arr[index] - arr[index + 1]) > 3) return false;
     if (arr[index] - arr[index + 1] === 0) return false;
-    if (!isIncreasing(arr)) if (!isDecreasing(arr)) return false;
+    if (!isIncreasing(arr)) { if (!isDecreasing(arr)) return false; }
   }
 
   return true;
