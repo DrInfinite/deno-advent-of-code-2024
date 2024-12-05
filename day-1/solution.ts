@@ -1,3 +1,5 @@
+export const expectedPartOneSampleOutput = 11;
+
 export function solvePartOne(input: string): number {
   const lines: string[] = input.split('\n');
 
@@ -21,6 +23,8 @@ export function solvePartOne(input: string): number {
 
   return totalDistance;
 }
+
+export const expectedPartTwoSampleOutput = 31;
 
 export function solvePartTwo(input: string): number {
   const lines: string[] = input.split('\n');

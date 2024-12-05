@@ -1,3 +1,5 @@
+export const expectedPartOneSampleOutput = '18';
+
 export function solvePartOne(input: string): string {
   const lines = input.split('\n').filter((line) => line !== '');
   const directions: [number, number][] = [];
@@ -43,6 +45,8 @@ export function solvePartOne(input: string): string {
 
   return count.toString();
 }
+
+export const expectedPartTwoSampleOutput = '9';
 
 export function solvePartTwo(input: string): string {
   const lines = input.split('\n').map((line) => line.split(''));

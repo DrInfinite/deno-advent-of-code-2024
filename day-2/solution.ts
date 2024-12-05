@@ -1,3 +1,5 @@
+export const expectedPartOneSampleOutput = '2';
+
 const isIncreasing = (arr: number[]): boolean => {
   for (let i = 0; i < arr.length - 1; i++) {
     if (arr[i] > arr[i + 1]) return false;
@@ -31,6 +33,8 @@ export function solvePartOne(input: string): string {
 
   return safe.toString();
 }
+
+export const expectedPartTwoSampleOutput = '4';
 
 export function solvePartTwo(input: string): string {
   const lines = input.split('\n').map((line) => line.split(' ').map(Number));
