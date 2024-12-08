@@ -3,9 +3,9 @@ import {
   expectedPartTwoSampleOutput,
   solvePartOne,
   solvePartTwo,
-} from './day-5/solution.ts';
+} from './day-6/solution.ts';
 
-const day = 5;
+const day = 6;
 
 const dataPartOne = await Deno.readTextFile(
   `./day-${day}/input-sample-part-1.txt`,
