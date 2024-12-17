@@ -3,9 +3,9 @@ import {
   expectedPartTwoSampleOutput,
   solvePartOne,
   solvePartTwo,
-} from './day-6/solution.ts';
+} from './day-9/solution.ts';
 
-const day = 6;
+const day = 9;
 
 const dataPartOne = await Deno.readTextFile(
   `./day-${day}/input-sample-part-1.txt`,
@@ -34,5 +34,12 @@ console.log(
 const data = await Deno.readTextFile(`./day-${day}/input.txt`);
 const input = data.trim();
 
-console.log('\nPart One:', solvePartOne(input));
-console.log('Part Two:', solvePartTwo(input));
+if (samplePartOneOutput === expectedPartOneSampleOutput) {
+  console.log('\nPart One:', solvePartOne(input));
+}
+if (
+  samplePartOneOutput === expectedPartOneSampleOutput &&
+  samplePartTwoOutput === samplePartTwoOutput
+) {
+  console.log('Part Two:', solvePartTwo(input));
+}
