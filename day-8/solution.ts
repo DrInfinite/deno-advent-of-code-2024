@@ -154,7 +154,6 @@ export function solvePartTwo(input: string): string {
         multiplier++;
       }
     });
-
   });
 
   return locations.length.toString();
